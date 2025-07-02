@@ -3,7 +3,9 @@ import "./DashBoard.css";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      <h2 className="dashboard-title">Dashboard</h2>
+      <div className="content-header">
+        <h2 className="dashboard-title">Dashboard</h2>
+      </div>
 
       <div className="dashboard-cards">
         <div className="dash-card blue">
