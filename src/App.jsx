@@ -1,10 +1,16 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
-import Dashboard from './pages/Dashboard';
-import NewTicket from './pages/NewTicket';
-import MyTicket from './pages/MyTicket';
-import Layout from './components/Layout';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import ForgotPassword from "./pages/ForgotPassword";
+import Dashboard from "./pages/Dashboard";
+import NewTicket from "./pages/NewTicket";
+import MyTicket from "./pages/MyTicket";
+import Layout from "./components/Layout";
 
 function App() {
   return (
@@ -16,6 +22,7 @@ function App() {
         {/* Public routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
 
         {/* Protected layout routes */}
         <Route element={<Layout />}>
