@@ -13,7 +13,7 @@ const Header = ({ onLogout }) => {
     <header className="header">
       <h1 className="helpdesk-title">Helpdesk</h1>
       <div className="header-icons">
-        <div className="bm-bi-toggle">
+        <div className="bm-bi-toggle" onClick={handleToggle}>
           <svg
             width="75"
             height="29"
@@ -25,32 +25,65 @@ const Header = ({ onLogout }) => {
               d="M37.5 26.3125V2.6875H65.625C66.8682 2.6875 68.0605 2.86529 68.9396 3.18176C69.8186 3.49822 70.3125 3.92745 70.3125 4.375V24.625C70.3125 25.0726 69.8186 25.5018 68.9396 25.8182C68.0605 26.1347 66.8682 26.3125 65.625 26.3125H37.5ZM65.625 28C68.1114 28 70.496 27.6444 72.2541 27.0115C74.0123 26.3785 75 25.5201 75 24.625V4.375C75 3.47989 74.0123 2.62145 72.2541 1.98851C70.496 1.35558 68.1114 1 65.625 1H9.375C6.8886 1 4.50403 1.35558 2.74587 1.98851C0.987721 2.62145 0 3.47989 0 4.375L0 24.625C0 25.5201 0.987721 26.3785 2.74587 27.0115C4.50403 27.6444 6.8886 28 9.375 28H65.625Z"
               fill="black"
             />
-            <text
-              fill="white"
-              xmlSpace="preserve"
-              style={{ whiteSpace: "pre" }}
-              fontFamily="Roboto"
-              fontSize="12"
-              fontWeight="bold"
-              letterSpacing="0em"
-            >
-              <tspan x="10" y="20.1016">
-                BM
-              </tspan>
-            </text>
-            <text
-              fill="black"
-              xmlSpace="preserve"
-              style={{ whiteSpace: "pre" }}
-              fontFamily="Roboto"
-              fontSize="12"
-              fontWeight="bold"
-              letterSpacing="0em"
-            >
-              <tspan x="46" y="20.1016">
-                BI
-              </tspan>
-            </text>
+            {toggle === "BM" ? (
+              <>
+                <text
+                  fill="white"
+                  xmlSpace="preserve"
+                  style={{ whiteSpace: "pre" }}
+                  fontFamily="Roboto"
+                  fontSize="12"
+                  fontWeight="bold"
+                  letterSpacing="0em"
+                >
+                  <tspan x="10" y="20.1016">
+                    BM
+                  </tspan>
+                </text>
+                <text
+                  fill="black"
+                  xmlSpace="preserve"
+                  style={{ whiteSpace: "pre" }}
+                  fontFamily="Roboto"
+                  fontSize="12"
+                  fontWeight="bold"
+                  letterSpacing="0em"
+                >
+                  <tspan x="46" y="20.1016">
+                    BI
+                  </tspan>
+                </text>
+              </>
+            ) : (
+              <>
+                <text
+                  fill="black"
+                  xmlSpace="preserve"
+                  style={{ whiteSpace: "pre" }}
+                  fontFamily="Roboto"
+                  fontSize="12"
+                  fontWeight="bold"
+                  letterSpacing="0em"
+                >
+                  <tspan x="10" y="20.1016">
+                    BM
+                  </tspan>
+                </text>
+                <text
+                  fill="white"
+                  xmlSpace="preserve"
+                  style={{ whiteSpace: "pre" }}
+                  fontFamily="Roboto"
+                  fontSize="12"
+                  fontWeight="bold"
+                  letterSpacing="0em"
+                >
+                  <tspan x="46" y="20.1016">
+                    BI
+                  </tspan>
+                </text>
+              </>
+            )}
           </svg>
         </div>
 
