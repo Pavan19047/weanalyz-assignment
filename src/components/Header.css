@@ -20,48 +20,43 @@
   margin-right: 20px;
 }
 
-.toggle-container {
-  display: flex;
-  align-items: center;
-  background: #000;
-  border-radius: 4px;
-  padding: 4px 8px;
-  gap: 4px;
+.bm-bi-toggle {
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-.toggle-bm {
-  color: white;
-  font-family:
-    Roboto,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.toggle-bi {
-  color: #000;
-  background: white;
-  font-family:
-    Roboto,
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 2px 4px;
-  border-radius: 2px;
+.bm-bi-toggle:hover {
+  transform: scale(1.05);
 }
 
 .icon {
   cursor: pointer;
-  color: #000;
+  fill: #000;
   transition: transform 0.2s;
 }
 
 .icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.bell-icon {
+  width: 24px;
+  height: 29px;
+}
+
+.user-icon {
+  width: 22px;
+  height: 25px;
+}
+
+.logout-icon {
+  width: 27px;
+  height: 25px;
+}
+
+/* Link styling for user icon */
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
