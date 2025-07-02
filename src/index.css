@@ -1,0 +1,53 @@
+/* /* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  background-color: #F2F5FF; /* Ghost White from your palette */
+  color: #000; /* Default black text */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Remove unwanted root theme settings */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}

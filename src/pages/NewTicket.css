@@ -1,0 +1,45 @@
+.ticket-container {
+  padding: 20px;
+  width: 100%;
+}
+
+.ticket-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3066BE; /* True Blue */
+}
+
+.ticket-form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ticket-form input,
+.ticket-form textarea,
+.ticket-form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+.ticket-form button {
+  padding: 12px;
+  background-color: #28C2FF; /* Capri */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ticket-form button:hover {
+  background-color: #2AF5FF; /* Electric Blue */
+}
