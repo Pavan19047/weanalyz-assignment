@@ -27,7 +27,7 @@ const Header = ({ onLogout }) => {
             />
             <>
               <text
-                fill={toggle === "BM" ? "white" : "black"}
+                fill="white"
                 xmlSpace="preserve"
                 style={{ whiteSpace: "pre" }}
                 fontFamily="Roboto"
