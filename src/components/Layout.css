@@ -4,19 +4,19 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* HEADER */
 .header {
   width: 100%;
-  height: 60px;
-  background-color: #55D6C2; /* Turquoise */
+  height: 90px;
+  background-color: #55d6c2;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -24,30 +24,33 @@
 .main-content {
   display: flex;
   flex: 1;
-  background-color: #F2F5FF; /* Ghost White */
+  background-color: #fff;
 }
 
 /* SIDEBAR */
 .sidebar {
-  width: 200px;
-  background-color: #E0E0E0; /* Light gray */
-  padding: 20px 10px;
+  width: 250px;
+  background-color: rgba(106, 103, 103, 0.21);
+  padding: 0;
   box-sizing: border-box;
+  min-height: calc(100vh - 139px);
 }
 
 /* CONTENT */
 .content-wrapper {
   flex: 1;
-  padding: 20px;
+  padding: 0;
   box-sizing: border-box;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #55D6C2;
+  height: 49px;
+  background-color: #55d6c2;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsive */
@@ -58,5 +61,14 @@ footer {
 
   .sidebar {
     width: 100%;
+    min-height: auto;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .helpdesk-title {
+    font-size: 36px !important;
   }
 }
