@@ -1,15 +1,28 @@
 .dashboard-container {
-  padding: 20px;
   width: 100%;
+  height: 100%;
+  background: rgba(85, 214, 194, 0.68);
+  padding: 0;
   box-sizing: border-box;
+  min-height: calc(100vh - 180px);
+}
+
+.content-header {
+  padding: 20px 0;
+  margin-left: 20px;
 }
 
 .dashboard-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: black;
+  font-family:
+    Sanchez,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
 }
 
 .dashboard-cards {
@@ -17,6 +30,7 @@
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 40px;
 }
 
 .dash-card {
@@ -48,7 +62,7 @@
 }
 
 .blue {
-  background-color: #3066BE; /* True Blue */
+  background-color: #3066be; /* True Blue */
   color: #fff;
 }
 
@@ -58,11 +72,11 @@
 }
 
 .red {
-  background-color: #F44336; /* Red shade */
+  background-color: #f44336; /* Red shade */
   color: #fff;
 }
 
 .yellow {
-  background-color: #F5E960; /* Corn */
+  background-color: #f5e960; /* Corn */
   color: #000;
 }
