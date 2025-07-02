@@ -1,39 +1,59 @@
 .sidebar {
   width: 250px;
-  background-color: #e0e0e0;
-  padding-top: 20px;
+  background-color: rgba(106, 103, 103, 0.21);
+  padding-top: 15px;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 90px); /* adjust if you have a header */
-  padding-left: 10px;
-  font-family: 'Georgia', serif;
+  padding-left: 0;
+  font-family:
+    Sanchez,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
 }
 
 .sidebar-link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: black;
-  padding: 10px 5px;
-  font-size: 18px;
-  font-weight: 500;
-  gap: 10px;
+  color: #000;
+  padding: 17px 20px;
+  font-size: 26px;
+  font-weight: 400;
+  gap: 14px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .sidebar-link .arrow {
-  font-size: 16px;
-  color: black;
+  position: absolute;
+  left: 0;
+  font-size: 19px;
+  color: #000;
+  margin-left: 6px;
 }
 
 .sidebar-link .icon {
-  font-size: 20px;
+  font-size: 24px;
+  margin-left: 20px;
 }
 
-.sidebar-link.active {
-  font-weight: bold;
+.sidebar-link.active .icon {
+  margin-left: 6px;
 }
 
-.sidebar-link.active .label {
-  font-weight: bold;
+.sidebar-link .label {
+  font-family:
+    Sanchez,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(106, 103, 103, 0.1);
 }
