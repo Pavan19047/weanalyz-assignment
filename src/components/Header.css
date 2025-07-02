@@ -1,26 +1,59 @@
+.helpdesk-title {
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  color: #edf5e1;
+  margin: 0;
+  margin-left: 20px;
+}
+
 .header-icons {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-right: 20px;
 }
 
-.tag {
-  cursor: pointer;
-  padding: 4px 8px;
+.toggle-container {
+  display: flex;
+  align-items: center;
+  background: #000;
   border-radius: 4px;
-  font-weight: bold;
-  font-size: 14px;
+  padding: 4px 8px;
+  gap: 4px;
 }
 
-.tag.black {
-  background-color: black;
+.toggle-bm {
   color: white;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.tag.white {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
+.toggle-bi {
+  color: #000;
+  background: white;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 2px;
 }
 
 .icon {
