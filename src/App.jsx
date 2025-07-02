@@ -10,6 +10,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Dashboard from "./pages/Dashboard";
 import NewTicket from "./pages/NewTicket";
 import MyTicket from "./pages/MyTicket";
+import UserProfile from "./pages/UserProfile";
 import Layout from "./components/Layout";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/new-ticket" element={<NewTicket />} />
           <Route path="/my-ticket" element={<MyTicket />} />
+          <Route path="/user-profile" element={<UserProfile />} />
         </Route>
       </Routes>
     </Router>
