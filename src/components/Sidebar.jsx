@@ -6,8 +6,17 @@ import "./Sidebar.css";
 const Sidebar = () => {
   const menu = [
     { name: "Dashboard", path: "/dashboard", icon: <FaTachometerAlt /> },
-    { name: "New Ticket", path: "/new-ticket", icon: <FaTicketAlt /> },
+    {
+      name: "Ticket Approval",
+      path: "/operation-dashboard",
+      icon: <FaTicketAlt />,
+    },
     { name: "My Ticket", path: "/my-ticket", icon: <FaClipboardList /> },
+    {
+      name: "Performance",
+      path: "/operation-dashboard",
+      icon: <FaTachometerAlt />,
+    },
   ];
 
   return (
