@@ -1,13 +1,22 @@
-import { NavLink } from 'react-router-dom';
-import { FaTachometerAlt, FaTicketAlt, FaClipboardList } from 'react-icons/fa';
-import { FiChevronRight } from 'react-icons/fi';
-import './Sidebar.css';
+import { NavLink } from "react-router-dom";
+import { FaTachometerAlt, FaTicketAlt, FaClipboardList } from "react-icons/fa";
+import { FiChevronRight } from "react-icons/fi";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   const menu = [
-    { name: 'Dashboard', path: '/dashboard', icon: <FaTachometerAlt /> },
-    { name: 'New Ticket', path: '/new-ticket', icon: <FaTicketAlt /> },
-    { name: 'My Ticket', path: '/my-ticket', icon: <FaClipboardList /> }
+    { name: "Dashboard", path: "/dashboard", icon: <FaTachometerAlt /> },
+    {
+      name: "Ticket Approval",
+      path: "/operation-dashboard",
+      icon: <FaTicketAlt />,
+    },
+    { name: "My Ticket", path: "/my-ticket", icon: <FaClipboardList /> },
+    {
+      name: "Performance",
+      path: "/operation-dashboard",
+      icon: <FaTachometerAlt />,
+    },
   ];
 
   return (
@@ -16,7 +25,9 @@ const Sidebar = () => {
         <NavLink
           to={item.path}
           key={index}
-          className={({ isActive }) => `sidebar-link ${isActive ? 'active' : ''}`}
+          className={({ isActive }) =>
+            `sidebar-link ${isActive ? "active" : ""}`
+          }
         >
           {({ isActive }) => (
             <>
